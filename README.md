@@ -98,12 +98,97 @@ git push -all
     1. подпункт
 
 * список
-    * подпункта 
+    * подпункт 
 
-[ссылка](url)
-![картинка](url)
+[ссылка](https://github.com/mkskrypnikov/spravka-git)
+![картинка](https://staging.fofxacademy.com/wp-content/uploads/2020/01/install-git-for-multiple-users.png)
 
 '''python
 import pandas as pd
 '''
+```
+
+#######Просмотр веток
+```
+git branch
+```
+
+#######Создание веток
+```
+git branch novaya/metka
+```
+#######Переключение между ветками
+```
+git checkout novaya/vetka
+
+```
+#######Объединение
+```
+git merge --no-ff novaya/metka
+```
+#######Визуализация меток
+```
+git log navaya/metka --graph --oneline
+```
+#######Удаление веток
+```
+git branch -d novaya/vetka
+git push --delete origin novaya/vetka
+```
+#######Теги
+```
+git tag –a v1.0 –m "Версия 1.0"
+git tag –a v1.0 –m "Версия 1.0" <commit-id>
+```
+#######Просмотр тегов
+```
+git tag
+```
+#######Принудительная отправка тегов
+```
+git push --tags
+```
+#######Удаление тегов
+```
+git tag -d v1.0
+git push --delete origin v1.0
+```
+#######Работа с историей
+```
+git log
+git log -- index.html
+git show ffbf1e -- index.html
+git log -p -- index.html
+git log --grep 'Перво' (поиск по содержанию комментария коммита
+git log -S'page' -p (поиск по содержанию файлов)
+git log --all (поиск по всем веткам)
+git blame -- <path> (поиск с авторством)
+```
+#######Откат изменений
+```
+git checkout <commit-id>
+рекомендуется после создать новую ветку для коммита
+git branch <name>
+git checkout <name>
+```
+
+#######fast-forward
+```
+--no-ff
+по умолчанию переключает указатель на метку
+при выключеном делает новый коммит
+```
+
+#######отмена коммитов
+```
+git reset <mode> <commit-id>
+
+— hard – передвигаем указатель на определённый коммит, не сохраняя
+никаких изменений;
+— soft – передвигаем указатель на определённый коммит, при этом
+предыдущие изменения сохраняются в рабочем каталоге и index'е;
+— mixed – передвигаем указатель на определённый коммит, при этом
+предыдущие изменения сохраняются в рабочем каталоге, но не в index'е.
+
+git reset <mode> HEAD~1<num>
 ```
