@@ -67,6 +67,21 @@ tmp/
 #######Клонирование репозитория
 ```
 git clone https://github.com/mkskrypnikov/spravka-git.git
+Создание веток после клонирования (кроме master)
+git branch <local-branch><origin/remote-branch>
+или
+git checkout --track <remote-branch>
+
+```
+
+#######Синхронизация с удаленным репозиторием
+```
+git push (отправка данных)
+git fetch <origin> (получает данные но не merge)
+git checkout origin/feature/sale (для дальнейшего просмотра)
+git merge (для слияния)
+git pull (git fetch + merge)
+
 ```
 
 ######Работа с репозиторием
@@ -191,4 +206,26 @@ git reset <mode> <commit-id>
 предыдущие изменения сохраняются в рабочем каталоге, но не в index'е.
 
 git reset <mode> HEAD~1<num>
+```
+#######Issue
+```
+Для закрытия Issue в коммит добавить коммент:
+fixes #2 Добавили форму для отображения 
+fixes #2 говорит о том, что закрывает issue с id = 2.
+
+```
+
+#######GITHUB FLOW
+[GITHUB FLOW](https://guides.github.com/introduction/flow/)
+```
+1. Создаёте branch ;
+2. В рамках branch 'а коммитите изменения;
+3. Открываете Pull Request для обсуждения ваших изменений с коллегами
+(code review, решение вопросов);
+4. Делаете merge
+```
+#######PULL REQUESTS
+```
+— base –то, куда мы собираемся делать Pull Request;
+— head –то, что мы собираемся использовать в качестве Pull Request'а
 ```
