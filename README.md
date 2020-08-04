@@ -1,4 +1,6 @@
 # Git
+![картинка](https://www.mobilesmspk.net/user/images/app_images/2015/10/10/www.mobilesmspk.net_github_1111.jpg)
+
 
 ###### Авторизационные данные
 
@@ -113,10 +115,10 @@ git push -all
     1. подпункт
 
 * список
-    * подпункт 
+    * подпункта 
 
 [ссылка](https://github.com/mkskrypnikov/spravka-git)
-![картинка](https://staging.fofxacademy.com/wp-content/uploads/2020/01/install-git-for-multiple-users.png)
+![картинка](https://www.mobilesmspk.net/user/images/app_images/2015/10/10/www.mobilesmspk.net_github_1111.jpg)
 
 '''python
 import pandas as pd
