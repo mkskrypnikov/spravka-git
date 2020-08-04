@@ -1,24 +1,24 @@
-#Git
+# Git
 
-######Авторизационные данные
+###### Авторизационные данные
 
 ```
 git config --global user.name "Maksim Skrypnikov"
 git config --global user.email mkskrypnikov@gmail.com
 ```
 
-######Установка редактора
+###### Установка редактора
 ```
 git config --global core.editor nano
 ```
 
 
-######Создание репозитория
+###### Создание репозитория
 
 ```
 git init
 ```
-######Добавление файлов и маски
+###### Добавление файлов и маски
 ```
 git add index.html
 git add *
@@ -26,35 +26,35 @@ git add *.js
 git add .
 ```
 
-######Текущий стстаус
+###### Текущий стстаус
 ```
 git status
 ```
 
-######Коммит
+###### Коммит
 ```
 git commit -m "first commit"
 git commit -a -m "first commit"
 ```
 
-######История и подробная информация
+###### История и подробная информация
 ```
 git log
 git show 1234567
 ```
 
-######Удаление лишнего из add
+###### Удаление лишнего из add
 ```
 git rm --cached name.txt
 ```
 
-######Возврат по последнего коммита или до определенного
+###### Возврат по последнего коммита или до определенного
 ```
 git commit --amend -m "Roboto Font"
 git revert <commit-id>
 ```
 
-#######Игнорирование файлов и каталогов
+####### Игнорирование файлов и каталогов
 ```
 .gitignore
 
@@ -64,7 +64,7 @@ tmp/
 *.txt
 ```
 
-#######Клонирование репозитория
+####### Клонирование репозитория
 ```
 git clone https://github.com/mkskrypnikov/spravka-git.git
 Создание веток после клонирования (кроме master)
@@ -74,7 +74,7 @@ git checkout --track <remote-branch>
 
 ```
 
-#######Синхронизация с удаленным репозиторием
+####### Синхронизация с удаленным репозиторием
 ```
 git push (отправка данных)
 git fetch <origin> (получает данные но не merge)
@@ -84,26 +84,26 @@ git pull (git fetch + merge)
 
 ```
 
-######Работа с репозиторием
+###### Работа с репозиторием
 ```
 git remote -v
 git remote add origin https://github.com/mkskrypnikov/spravka-git.git
 ```
 
-######Отправка в удаленный репозиторий
+###### Отправка в удаленный репозиторий
 ```
 git push -u origin master
 git push
 git push -all
 ```
 
-#######Marcdown
+####### Marcdown
 ```
 создается файл README.md
 ```
 
 ```markdown
-#Заголовки
+# Заголовки
 
 **жирный**
 *курсив*
@@ -123,52 +123,52 @@ import pandas as pd
 '''
 ```
 
-#######Просмотр веток
+####### Просмотр веток
 ```
 git branch
 ```
 
-#######Создание веток
+####### Создание веток
 ```
 git branch novaya/metka
 ```
-#######Переключение между ветками
+####### Переключение между ветками
 ```
 git checkout novaya/vetka
 
 ```
-#######Объединение
+####### Объединение
 ```
 git merge --no-ff novaya/metka
 ```
-#######Визуализация меток
+####### Визуализация меток
 ```
 git log navaya/metka --graph --oneline
 ```
-#######Удаление веток
+####### Удаление веток
 ```
 git branch -d novaya/vetka
 git push --delete origin novaya/vetka
 ```
-#######Теги
+####### Теги
 ```
 git tag –a v1.0 –m "Версия 1.0"
 git tag –a v1.0 –m "Версия 1.0" <commit-id>
 ```
-#######Просмотр тегов
+####### Просмотр тегов
 ```
 git tag
 ```
-#######Принудительная отправка тегов
+####### Принудительная отправка тегов
 ```
 git push --tags
 ```
-#######Удаление тегов
+####### Удаление тегов
 ```
 git tag -d v1.0
 git push --delete origin v1.0
 ```
-#######Работа с историей
+####### Работа с историей
 ```
 git log
 git log -- index.html
@@ -179,7 +179,7 @@ git log -S'page' -p (поиск по содержанию файлов)
 git log --all (поиск по всем веткам)
 git blame -- <path> (поиск с авторством)
 ```
-#######Откат изменений
+####### Откат изменений
 ```
 git checkout <commit-id>
 рекомендуется после создать новую ветку для коммита
@@ -187,14 +187,14 @@ git branch <name>
 git checkout <name>
 ```
 
-#######fast-forward
+####### fast-forward
 ```
 --no-ff
 по умолчанию переключает указатель на метку
 при выключеном делает новый коммит
 ```
 
-#######отмена коммитов
+####### отмена коммитов
 ```
 git reset <mode> <commit-id>
 
@@ -207,7 +207,7 @@ git reset <mode> <commit-id>
 
 git reset <mode> HEAD~1<num>
 ```
-#######Issue
+####### Issue
 ```
 Для закрытия Issue в коммит добавить коммент:
 fixes #2 Добавили форму для отображения 
@@ -215,7 +215,7 @@ fixes #2 говорит о том, что закрывает issue с id = 2.
 
 ```
 
-#######GITHUB FLOW
+####### GITHUB FLOW
 [GITHUB FLOW](https://guides.github.com/introduction/flow/)
 ```
 1. Создаёте branch ;
@@ -224,7 +224,7 @@ fixes #2 говорит о том, что закрывает issue с id = 2.
 (code review, решение вопросов);
 4. Делаете merge
 ```
-#######PULL REQUESTS
+####### PULL REQUESTS
 ```
 — base –то, куда мы собираемся делать Pull Request;
 — head –то, что мы собираемся использовать в качестве Pull Request'а
