@@ -1,7 +1,6 @@
 # Git
+
 ![картинка](https://www.mobilesmspk.net/user/images/app_images/2015/10/10/www.mobilesmspk.net_github_1111.jpg)
-
-
 ###### Авторизационные данные
 
 ```
