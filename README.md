@@ -55,7 +55,7 @@ git commit --amend -m "Roboto Font"
 git revert <commit-id>
 ```
 
-####### Игнорирование файлов и каталогов
+###### Игнорирование файлов и каталогов
 ```
 .gitignore
 
@@ -65,7 +65,7 @@ tmp/
 *.txt
 ```
 
-####### Клонирование репозитория
+###### Клонирование репозитория
 ```
 git clone https://github.com/mkskrypnikov/spravka-git.git
 Создание веток после клонирования (кроме master)
@@ -75,7 +75,7 @@ git checkout --track <remote-branch>
 
 ```
 
-####### Синхронизация с удаленным репозиторием
+###### Синхронизация с удаленным репозиторием
 ```
 git push (отправка данных)
 git fetch <origin> (получает данные но не merge)
@@ -98,7 +98,7 @@ git push
 git push -all
 ```
 
-####### Marcdown
+###### Marcdown
 ```
 создается файл README.md
 ```
@@ -124,52 +124,52 @@ import pandas as pd
 '''
 ```
 
-####### Просмотр веток
+###### Просмотр веток
 ```
 git branch
 ```
 
-####### Создание веток
+###### Создание веток
 ```
 git branch novaya/metka
 ```
-####### Переключение между ветками
+###### Переключение между ветками
 ```
 git checkout novaya/vetka
 
 ```
-####### Объединение
+###### Объединение
 ```
 git merge --no-ff novaya/metka
 ```
-####### Визуализация меток
+###### Визуализация меток
 ```
 git log navaya/metka --graph --oneline
 ```
-####### Удаление веток
+###### Удаление веток
 ```
 git branch -d novaya/vetka
 git push --delete origin novaya/vetka
 ```
-####### Теги
+###### Теги
 ```
 git tag –a v1.0 –m "Версия 1.0"
 git tag –a v1.0 –m "Версия 1.0" <commit-id>
 ```
-####### Просмотр тегов
+###### Просмотр тегов
 ```
 git tag
 ```
-####### Принудительная отправка тегов
+###### Принудительная отправка тегов
 ```
 git push --tags
 ```
-####### Удаление тегов
+###### Удаление тегов
 ```
 git tag -d v1.0
 git push --delete origin v1.0
 ```
-####### Работа с историей
+###### Работа с историей
 ```
 git log
 git log -- index.html
@@ -180,7 +180,7 @@ git log -S'page' -p (поиск по содержанию файлов)
 git log --all (поиск по всем веткам)
 git blame -- <path> (поиск с авторством)
 ```
-####### Откат изменений
+###### Откат изменений
 ```
 git checkout <commit-id>
 рекомендуется после создать новую ветку для коммита
@@ -188,14 +188,14 @@ git branch <name>
 git checkout <name>
 ```
 
-####### fast-forward
+###### fast-forward
 ```
 --no-ff
 по умолчанию переключает указатель на метку
 при выключеном делает новый коммит
 ```
 
-####### отмена коммитов
+###### отмена коммитов
 ```
 git reset <mode> <commit-id>
 
@@ -208,7 +208,7 @@ git reset <mode> <commit-id>
 
 git reset <mode> HEAD~1<num>
 ```
-####### Issue
+###### Issue
 ```
 Для закрытия Issue в коммит добавить коммент:
 fixes #2 Добавили форму для отображения 
@@ -216,7 +216,7 @@ fixes #2 говорит о том, что закрывает issue с id = 2.
 
 ```
 
-####### GITHUB FLOW
+###### GITHUB FLOW
 [GITHUB FLOW](https://guides.github.com/introduction/flow/)
 ```
 1. Создаёте branch ;
@@ -225,7 +225,7 @@ fixes #2 говорит о том, что закрывает issue с id = 2.
 (code review, решение вопросов);
 4. Делаете merge
 ```
-####### PULL REQUESTS
+###### PULL REQUESTS
 ```
 — base –то, куда мы собираемся делать Pull Request;
 — head –то, что мы собираемся использовать в качестве Pull Request'а
